@@ -1,0 +1,205 @@
+:root {
+    --mainColor:#0da2b6 ;
+   
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Alkatra', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    background: #000;
+    color: white;
+}
+
+.pricing_page{
+    padding: 50px;
+}
+.pricing_page .header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.pricing_page .header h1{
+    font-size: 31pt;
+    text-transform: capitalize;
+
+}
+.pricing_page .header .paragraph{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(152, 145, 145);
+   
+}
+
+.pricing_page .header .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing_page .header .buttons .btn{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+ background-color: transparent;
+
+    border: 2px solid var(--mainColor);
+    border-radius: 20px;
+    color: white;
+    text-transform: capitalize;
+    transition: .4s ease-in;
+}
+
+.pricing_page .header .buttons .btn:hover{
+    background-color: #64cddb !important ;
+    box-shadow: 1px 1px 2px 2px #95e2ec;
+    cursor: pointer;
+}
+.buttons .active{
+    background-color: rgb(14, 162, 14)  !important ;
+    box-shadow: 1px 4px 2px 1px greenyellow;
+}
+
+.plans_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid crimson; */
+    margin-top: 40px;
+    
+}
+
+.plans_section .plan{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgb(81, 79, 82);
+    border-radius: 20px;
+    padding: 20px;
+    transition: .4s ease all;
+margin: 5px;
+}
+.plans_section .plan:hover{
+    background-color: rgb(0, 77, 128);
+border: 2px solid rgb(255, 252, 252);
+
+cursor: pointer;
+}
+
+.plans_section .plan .plan_title h2{
+    text-transform: capitalize;
+    color: var(--mainColor);
+    padding: 10px;
+}
+.plans_section .plan .plan_price h1{
+    font-size: 34pt;
+
+}
+
+.plans_section .plan .plan_features{
+    display: flex;
+    flex-direction: column;
+}
+.plans_section .plan .plan_price span{
+    color: gray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.plans_section .plan .plan_features span{
+    padding: 7px;
+    text-align: start;
+    
+}
+.plans_section .plan .plan_button button{
+width: 70%;
+height: 40px;
+padding: 5px;
+text-align: center;
+border: none;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+margin: 5px;
+text-transform: capitalize;
+background-color:  var(--mainColor);
+font-size: 12pt;
+}
+.plans_section .plan .save_money{
+    margin: 5px;
+    font-size: 12pt;
+    color: rgb(133, 126, 126);
+}
+.plans_section .active{
+    background-color: rgb(0, 77, 128);
+    border: 2px solid rgb(255, 252, 252);
+    }
+ 
+
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pricing_page{
+        padding: 10px;
+    }
+    .pricing_page .header .paragraph{
+        width: 100%;
+        
+    }
+    .plans_section{
+        width: 100% !important;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    .plans_section .plan{
+        border: 1px solid white;
+        width: 80%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+    .plans_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .plans_section .plan{
+        border: 1px solid white;
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .plans_section .plan{
+        
+        width: 42%;
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .plans_section .plan{
+        
+      display: flex;
+      width: auto;
+        
+    }
+}
+
